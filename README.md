@@ -51,9 +51,3 @@ Examples:
 If `customTerminalArgs` is empty, the terminal process is started with its working directory set to the selected folder.
 
 如果 `customTerminalArgs` 为空，终端进程会以选中的文件夹作为工作目录启动。
-
-## More / 更多
-
-Installation and development notes are available in [README.development.md](README.development.md).
-
-安装和开发说明见 [README.development.md](README.development.md)。
