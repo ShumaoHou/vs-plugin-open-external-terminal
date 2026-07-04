@@ -2,7 +2,8 @@
   "name": "vs-plugin-open-external-terminal",
   "displayName": "%extension.displayName%",
   "description": "%extension.description%",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "icon": "icon.png",
   "license": "Apache-2.0",
   "publisher": "SumHou",
   "repository": {
