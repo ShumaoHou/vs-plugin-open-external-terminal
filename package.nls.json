@@ -1,0 +1,10 @@
+{
+  "extension.displayName": "Open External Terminal",
+  "extension.description": "Open the selected Explorer file or folder in the system terminal or a configured terminal tool.",
+  "command.category": "External Terminal",
+  "command.openInSystemTerminal.title": "Open in System Terminal",
+  "command.openInCustomTerminal.title": "Open in Custom Terminal",
+  "configuration.title": "Open External Terminal",
+  "configuration.customTerminalPath.description": "Path or command name of the custom terminal executable, for example wt.exe, powershell.exe, cmd.exe, WezTerm.exe, alacritty, or /Applications/iTerm.app.",
+  "configuration.customTerminalArgs.description": "Arguments passed to the custom terminal. Use ${cwd} as the selected folder path placeholder. If omitted, the terminal process starts with cwd set to the selected folder."
+}

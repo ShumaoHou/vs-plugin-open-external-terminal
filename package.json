@@ -1,0 +1,74 @@
+{
+  "name": "vs-plugin-open-external-terminal",
+  "displayName": "%extension.displayName%",
+  "description": "%extension.description%",
+  "version": "1.0.0",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:openExternalTerminal.openInSystemTerminal",
+    "onCommand:openExternalTerminal.openInCustomTerminal"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "openExternalTerminal.openInSystemTerminal",
+        "title": "%command.openInSystemTerminal.title%",
+        "category": "%command.category%"
+      },
+      {
+        "command": "openExternalTerminal.openInCustomTerminal",
+        "title": "%command.openInCustomTerminal.title%",
+        "category": "%command.category%"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "openExternalTerminal.openInSystemTerminal",
+          "when": "resourceScheme == file",
+          "group": "navigation@90"
+        },
+        {
+          "command": "openExternalTerminal.openInCustomTerminal",
+          "when": "resourceScheme == file",
+          "group": "navigation@91"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "%configuration.title%",
+      "properties": {
+        "openExternalTerminal.customTerminalPath": {
+          "type": "string",
+          "default": "",
+          "description": "%configuration.customTerminalPath.description%"
+        },
+        "openExternalTerminal.customTerminalArgs": {
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "description": "%configuration.customTerminalArgs.description%"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.5.3"
+  }
+}

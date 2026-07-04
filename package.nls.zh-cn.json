@@ -1,0 +1,10 @@
+{
+  "extension.displayName": "打开外部终端",
+  "extension.description": "在系统终端或已配置的终端工具中打开资源管理器选中的文件或文件夹。",
+  "command.category": "外部终端",
+  "command.openInSystemTerminal.title": "使用系统终端打开",
+  "command.openInCustomTerminal.title": "使用自定义终端打开",
+  "configuration.title": "打开外部终端",
+  "configuration.customTerminalPath.description": "自定义终端可执行文件路径或命令名，例如 wt.exe、powershell.exe、cmd.exe、WezTerm.exe、alacritty 或 /Applications/iTerm.app。",
+  "configuration.customTerminalArgs.description": "传给自定义终端的参数。使用 ${cwd} 作为选中文件夹路径占位符。如果留空，终端进程会以选中文件夹作为工作目录启动。"
+}
