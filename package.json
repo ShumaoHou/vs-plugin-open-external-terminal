@@ -3,6 +3,7 @@
   "displayName": "%extension.displayName%",
   "description": "%extension.description%",
   "version": "1.0.0",
+  "license": "Apache-2.0",
   "publisher": "local",
   "engines": {
     "vscode": "^1.90.0"
